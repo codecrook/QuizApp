@@ -4,35 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".ResultActivity">
 
     <ImageView
-        android:id="@+id/appIcon"
+        android:id="@+id/trophy_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/your_score_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trophy"/>
+    <TextView
+        android:id="@+id/your_score_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/asking"/>
+        android:layout_marginTop="5dp"
+        android:text="@string/your_score_label"/>
 
     <TextView
+        android:id="@+id/final_score_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/appIcon"
+        android:layout_below="@id/your_score_text_view"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/app_name"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        android:textStyle="bold"/>
+        android:text="@string/final_result"
+        android:textSize="60sp"/>
 
     <Button
-        android:id="@+id/start_quiz_button"
+        android:id="@+id/replay_button"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorAccent"
-        android:text="@string/start_quiz_text"
+        android:text="@string/play_again"
         android:textSize="20sp"/>
-
 </RelativeLayout>
