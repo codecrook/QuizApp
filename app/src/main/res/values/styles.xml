@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="cardStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/cardWidth</item>
+        <item name="android:layout_height">@dimen/cardHeight</item>
+        <item name="android:layout_marginTop">@dimen/cardMarginTop</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/cardPadding</item>
+        <item name="android:paddingRight">@dimen/cardPadding</item>
+        <item name="android:elevation">@dimen/cardElevation</item>
+        <item name="app:cardCornerRadius">@dimen/cardCornerRadius</item>
+    </style>
 </resources>

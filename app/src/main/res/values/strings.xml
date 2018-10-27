@@ -1,8 +1,36 @@
 <resources>
     <string name="app_name">QuizApp</string>
+
     <string name="start_quiz_text">START QUIZ</string>
     <string name="final_result">6</string>
     <string name="your_score_label">YOUR SCORE</string>
     <string name="play_again">PLAY AGAIN</string>
     <string name="submit_text">SUBMIT</string>
+
+    <string name="Q1">Q1. Question</string>
+    <string name="Q1AnsOpt1">OPT1</string>
+    <string name="Q1AnsOpt2">OPT2</string>
+    <string name="Q1AnsOpt3">OPT3</string>
+    <string name="Q1AnsOpt4">OPT4</string>
+
+    <string name="Q2">Q2. Question</string>
+    <string name="Q2AnsOpt1">OPT1</string>
+    <string name="Q2AnsOpt2">OPT2</string>
+    <string name="Q2AnsOpt3">OPT3</string>
+    <string name="Q2AnsOpt4">OPT4</string>
+
+    <string name="Q3">Q3. Question</string>
+    <string name="Q3AnsHint">Type your answer here</string>
+
+    <string name="Q4">Q4. Question</string>
+    <string name="Q4AnsOpt1">OPT1</string>
+    <string name="Q4AnsOpt2">OPT2</string>
+    <string name="Q4AnsOpt3">OPT3</string>
+    <string name="Q4AnsOpt4">OPT4</string>
+
+    <string name="Q5">Q5. Question</string>
+    <string name="Q5AnsOpt1">OPT1</string>
+    <string name="Q5AnsOpt2">OPT2</string>
+    <string name="Q5AnsOpt3">OPT3</string>
+    <string name="Q5AnsOpt4">OPT4</string>
 </resources>

@@ -5,12 +5,225 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".QuizActivity">
+    tools:context=".QuizActivity"
+    android:background="#303030">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <!--Question 1-->
+
+            <android.support.v7.widget.CardView
+                style="@style/cardStyle">
+
+                <TextView
+                    android:id="@+id/q1"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q1"/>
+                <RadioGroup
+                    android:id="@+id/Q1_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <RadioButton
+                        android:id="@+id/q1_ans_opt1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q1AnsOpt1" />
+
+                    <RadioButton
+                        android:id="@+id/q1_ans_opt2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q1AnsOpt2" />
+
+                    <RadioButton
+                        android:id="@+id/q1_ans_opt3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q1AnsOpt3" />
+
+                    <RadioButton
+                        android:id="@+id/q1_ans_opt4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q1AnsOpt4" />
+                </RadioGroup>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Question 2-->
+
+            <android.support.v7.widget.CardView
+                style="@style/cardStyle">
+
+                <TextView
+                    android:id="@+id/q2"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q2"/>
+
+                <LinearLayout
+                    android:id="@+id/q2_ans"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/q2_ans_opt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q2AnsOpt1"/>
+
+                    <CheckBox
+                        android:id="@+id/q2_ans_opt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q2AnsOpt2"/>
+
+                    <CheckBox
+                        android:id="@+id/q2_ans_opt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q2AnsOpt3"/>
+
+                    <CheckBox
+                        android:id="@+id/q2_ans_opt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q2AnsOpt4"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Question 3-->
+
+            <android.support.v7.widget.CardView
+                style="@style/cardStyle">
+
+                <TextView
+                    android:id="@+id/q3"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q3"/>
+
+                <EditText
+                    android:id="@+id/q3_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:inputType="text"
+                    android:hint="@string/Q3AnsHint"/>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Question 4-->
+
+            <android.support.v7.widget.CardView
+                style="@style/cardStyle">
+
+                <TextView
+                    android:id="@+id/q4"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q4"/>
+                <RadioGroup
+                    android:id="@+id/q4_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <RadioButton
+                        android:id="@+id/q4_ans_opt1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q4AnsOpt1" />
+
+                    <RadioButton
+                        android:id="@+id/q4_ans_opt2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q4AnsOpt2" />
+
+                    <RadioButton
+                        android:id="@+id/q4_ans_opt3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q4AnsOpt3" />
+
+                    <RadioButton
+                        android:id="@+id/q4_ans_opt4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Q4AnsOpt4" />
+                </RadioGroup>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Question 5-->
+
+            <android.support.v7.widget.CardView
+                style="@style/cardStyle">
+
+                <TextView
+                    android:id="@+id/q5"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q5"/>
+
+                <LinearLayout
+                    android:id="@+id/q5_ans"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/q5_ans_opt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q5AnsOpt1"/>
+
+                    <CheckBox
+                        android:id="@+id/q5_ans_opt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q5AnsOpt2"/>
+
+                    <CheckBox
+                        android:id="@+id/q5_ans_opt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q5AnsOpt3"/>
+
+                    <CheckBox
+                        android:id="@+id/q5_ans_opt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q5AnsOpt4"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
 
     </ScrollView>
     <Button

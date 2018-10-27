@@ -9,9 +9,28 @@ import android.widget.Button;
 
 public class WelcomeActivity extends AppCompatActivity {
 
+    //Button startQuizButton = (Button)findViewById(R.id.start_quiz_button);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+        /*startQuizButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(WelcomeActivity.this, QuizActivity.class);
+
+                startActivity(i);
+                finish();
+            }
+        });*/
     }
+
+     public void startQuiz(View view){
+         Intent i = new Intent(WelcomeActivity.this, QuizActivity.class);
+
+         startActivity(i);
+         finish();
+     }
 }
