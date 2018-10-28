@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".QuizActivity"
-    android:background="#303030">
+    tools:context=".QuizActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Q1"/>
                 <RadioGroup
-                    android:id="@+id/Q1_ans"
+                    android:id="@+id/q1_ans"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp">
@@ -234,6 +233,7 @@
 
     </ScrollView>
     <Button
+        android:id="@+id/submit_button"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
