@@ -65,7 +65,7 @@ public class QuizActivity extends AppCompatActivity {
                         playerScore++;
                     }
 
-                    if (q3Ans.equals("apt")) {
+                    if (q3Ans.equals("creeper")) {
                         playerScore++;
                     }
 
