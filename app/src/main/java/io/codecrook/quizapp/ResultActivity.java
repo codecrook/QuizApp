@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -17,11 +18,14 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        resultDisplay = (TextView) findViewById(R.id.final_score_text_view);
-        replayButton = (Button) findViewById(R.id.replay_button);
+        resultDisplay = findViewById(R.id.final_score_text_view);
+        replayButton = findViewById(R.id.replay_button);
         resultScore = getIntent().getExtras().getInt("result");
 
         resultDisplay.setText(String.valueOf(resultScore));
+
+        Toast resultToast = Toast.makeText(ResultActivity.this, "Score:" + resultScore, Toast.LENGTH_SHORT);
+        resultToast.show();
 
         replayButton.setOnClickListener(new View.OnClickListener() {
             @Override

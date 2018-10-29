@@ -24,23 +24,23 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
 
-        q1Ans = (RadioGroup) findViewById(R.id.q1_ans);
+        q1Ans = findViewById(R.id.q1_ans);
 
-        q4Ans = (RadioGroup) findViewById(R.id.q4_ans);
+        q4Ans = findViewById(R.id.q4_ans);
 
-        q2Opt1 = (CheckBox) findViewById(R.id.q2_ans_opt1);
-        q2Opt2 = (CheckBox) findViewById(R.id.q2_ans_opt2);
-        q2Opt3 = (CheckBox) findViewById(R.id.q2_ans_opt3);
-        q2Opt4 = (CheckBox) findViewById(R.id.q2_ans_opt4);
+        q2Opt1 = findViewById(R.id.q2_ans_opt1);
+        q2Opt2 = findViewById(R.id.q2_ans_opt2);
+        q2Opt3 = findViewById(R.id.q2_ans_opt3);
+        q2Opt4 = findViewById(R.id.q2_ans_opt4);
 
-        q5Opt1 = (CheckBox) findViewById(R.id.q5_ans_opt1);
-        q5Opt2 = (CheckBox) findViewById(R.id.q5_ans_opt2);
-        q5Opt3 = (CheckBox) findViewById(R.id.q5_ans_opt3);
-        q5Opt4 = (CheckBox) findViewById(R.id.q5_ans_opt4);
+        q5Opt1 = findViewById(R.id.q5_ans_opt1);
+        q5Opt2 = findViewById(R.id.q5_ans_opt2);
+        q5Opt3 = findViewById(R.id.q5_ans_opt3);
+        q5Opt4 = findViewById(R.id.q5_ans_opt4);
 
-        q3AnsEditText = (EditText) findViewById(R.id.q3_ans);
+        q3AnsEditText = findViewById(R.id.q3_ans);
 
-        submitButton = (Button) findViewById(R.id.submit_button);
+        submitButton = findViewById(R.id.submit_button);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +48,7 @@ public class QuizActivity extends AppCompatActivity {
                 int playerScore = 0;
                 q1AnsSelectedOptID = q1Ans.getCheckedRadioButtonId();
                 q4AnsSelectedOptID = q4Ans.getCheckedRadioButtonId();
-                q3Ans = q3AnsEditText.getText().toString().toLowerCase().trim();
+                q3Ans = q3AnsEditText.getText().toString().trim();
 
                 if (q1AnsSelectedOptID == -1 || q4AnsSelectedOptID == -1 || q3Ans.equals("")
                         || (!q2Opt1.isChecked() && !q2Opt2.isChecked() && !q2Opt3.isChecked() && !q2Opt4.isChecked())
@@ -65,7 +65,7 @@ public class QuizActivity extends AppCompatActivity {
                         playerScore++;
                     }
 
-                    if (q3Ans.equals("creeper")) {
+                    if (q3Ans.equalsIgnoreCase("creeper")) {
                         playerScore++;
                     }
 

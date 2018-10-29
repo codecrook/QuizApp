@@ -26,7 +26,6 @@
         android:textStyle="bold"/>
 
     <Button
-        android:onClick="startQuiz"
         android:id="@+id/start_quiz_button"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
